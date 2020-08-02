@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel=icon href=favicon.ico>
+    <title>Joodla</title>
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+
+<nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark">
+    <div class="container">
+
+        <a href="#" class="navbar-brand text-uppercase">
+            <img src="img/joodla_oo.png " width="30"> </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
+                aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarToggler">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="#project" class="nav-link">O projekcie</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#howWorks" class="nav-link" > Jak to działa ? </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#company" class="nav-link"> O nas </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#donate" class="nav-link"> Wesprzyj nas </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#footer" class="nav-link" > Kontakt </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" data-toggle="modal" data-target="#newsletterModal">Przypomnij mi!</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" data-toggle="collapse" data-target="#showAbout" aria-expanded="false"
+                       aria-controls="showAbout">O nas</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" data-toggle="modal" data-target="#contactModal" aria-expanded="false"
+                       aria-controls="contactModal">Napisz do nas</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<section id="home-section" class="text-light">
+    <div class="d-flex flex-column align-items-center justify-content-center aw-vertical-align">
+        <h1 class="text-uppercase aw-heading"><span class="aw-start">J </span> <span class="aw-back"> oo</span> <span
+                class="aw-start">dla</span></h1>
+        <p class="text-lowercase">już wkrótce aplikacja bedzie dostęna</p>
+        <div id="countdown" class="row my-sm-3 aw-countdown">
+            <div class="col-3 d-flex flex-column align-items-center">
+                <h3 id="time-days">00</h3>
+                <p>Dni</p>
+            </div>
+            <div class="col-3 d-flex flex-column align-items-center">
+                <h3 id="time-hours">00</h3>
+                <p>Godzin</p>
+            </div>
+            <div class="col-3 d-flex flex-column align-items-center">
+                <h3 id="time-minutes">00</h3>
+                <p>Minut</p>
+            </div>
+            <div class="col-3 d-flex flex-column align-items-center">
+                <h3 id="time-seconds">00</h3>
+                <p>Sekund</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <button id="btnRemindMe" class="btn btn-light rounded-0 aw-padding" type="button" data-toggle="modal"
+                        data-target="#newsletterModal">Kontakt
+                </button>
+            </div>
+            <div class="col">
+                <button id="btnAboutUs" class="btn btn-danger rounded-0 aw-padding" type="button" data-toggle="collapse"
+                        data-target="#showAbout" aria-expanded="false" aria-controls="showAbout">O nas
+                </button>
+            </div>
+        </div>
+        <div id="showAbout" class="collapse mt-2 mt-sm-5">
+            <div class="text-center border border-light p-2 p-sm-3 aw-about">
+                Ideą platformy jest optymalizacja działalności człowieka, tak by mógł on wydajniej i wygodniej
+                gospodarować dostępnymi dla niego zasobami. Portal Joodla koncentruje się na pomocy dla wytwórców
+                rolnych oraz ich kontrahentów, umożliwiając rolnikom uczciwy zarobek, a nabywcom dostęp do samego
+                źródła.
+            </div>
+        </div>
+        <div class="aw-footer">
+            All rights reserved RelayOnIt sp .z oo
+        </div>
+    </div>
+
+
+</section>
+
+<!-- Newsletter Modal -->
+<div id="newsletterModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="newsletterModal"
+     aria-hidden="true">
+    <div class="modal-dialog d-flex flex-column justify-content-center" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Newsletter</h5>
+                <button type="button" class="close ml-auto" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input type="text" class="form-control rounded-0" placeholder="wpisz e-mail"
+                                   aria-label="wpisz e-mail">
+                            <span class="input-group-btn">
+                                    <button type="button"
+                                            class="btn btn-danger btn-danger-override text-uppercase rounded-0"
+                                            data-dismiss="modal" aria-label="close">Wyślij</button>
+                                </span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Contact Modal -->
+<div id="contactModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="contactModal" aria-hidden="true">
+    <div class="modal-dialog d-flex flex-column justify-content-center" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Bądźmy w kontakcie!</h5>
+                <button type="button" class="close ml-auto" data-dismiss="modal" aria-label="close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <textarea class="form-control" rows="5" placeholder="wpisz wiadomość"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input type="text" class="form-control rounded-0" placeholder="wpisz e-mail"
+                                   aria-label="enter your email">
+                            <span class="input-group-btn">
+                                    <button type="button"
+                                            class="btn btn-danger btn-danger-override text-uppercase rounded-0"
+                                            data-dismiss="modal">Wyślij</button>
+                                </span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<section id="project" >
+    <div class="row information-content" >
+        <div class="col-md-6 col-sm-12 information-main" >
+            <h2> O projekcie </h2>
+            <p>
+                Praca rolnika to ciężki kawałek chleba. Wymaga poświęceń, wyrzeczeń i dużych kosztów a mimo to nie
+                zawsze
+                jest doceniana i uczciwie opłacana. Jednocześnie konsumenci chcą mieć dostęp do polskich produktów
+                dobrej
+                jakości i w atrakcyjnej cenie.<br>
+                Oczekiwania tych grup rozmijają się przez udział pośredników i nieuczciwe praktyki znakowania produktów
+                przez część sprzedawców. Tracimy na tym wszyscy.
+                I tutaj z pomocą przychodzi joodla.pl<br>
+                Joodla powstała z myślą o skróceniu łańcucha dostaw do niezbędnego minimum. Ideą jest dla nas
+                bezpośrednie
+                połączenie skrajnych ogniw tego łańcucha - rolników<br>
+                i producentów żywności z tysiącami odbiorców takich jak sklepy warzywne, garmażeryjne, restauracje,
+                cateringi oraz świadomi konsumenci. Dzięki temu rolnicy i producenci rolni otrzymają sprawiedliwe ceny
+                za
+                swoje produkty a ich odbiorcy - produkty z pewnych źródeł, bez przepłacania.<br>
+                Praca rolnika to ciężki kawałek chleba. Wymaga poświęceń, wyrzeczeń i dużych kosztów a mimo to nie
+                zawsze
+                jest doceniana i uczciwie opłacana. Jednocześnie konsumenci chcą mieć dostęp do polskich produktów
+                dobrej
+                jakości i w atrakcyjnej cenie.<br>
+                Oczekiwania tych grup rozmijają się przez udział pośredników i nieuczciwe praktyki znakowania produktów
+                przez część sprzedawców. Tracimy na tym wszyscy.
+                I tutaj z pomocą przychodzi joodla.pl<br>
+                Joodla powstała z myślą o skróceniu łańcucha dostaw do niezbędnego minimum. Ideą jest dla nas
+                bezpośrednie
+                połączenie skrajnych ogniw tego łańcucha - rolników<br>
+                i producentów żywności z tysiącami odbiorców takich jak sklepy warzywne, garmażeryjne, restauracje,
+                cateringi oraz świadomi konsumenci. Dzięki temu rolnicy i producenci rolni otrzymają sprawiedliwe ceny
+                za
+                swoje produkty a ich odbiorcy - produkty z pewnych źródeł, bez przepłacania.<br>
+
+            </p>
+
+        </div>
+        <div class="col-md-6 col-sm-12 img-farm">
+            <img src="img/farmer-men.jpg" class="img-farmer">
+        </div>
+    </div>
+
+</section>
+<section id="howWorks" class="how-works" style="margin-left: 30px">
+    <div class="row works">
+        <div class="col-md-6 col-sm-12 works-img" >
+        <img src="img/works.jpg" style="height: 430px" class="img-works-cont">
+    </div>
+        <div class="col-md-6 col-sm-12" style="    padding-left: 100px;">
+            <h2> Jak to działa ? </h2>
+            <p>
+                Joodla.pl to aplikacja sprzedażowa oparta na bezpośredniej relacji sprzedający – kupujący.<br>
+                Jak działa? Oto jej podstawowe funkcjonalności.<br>
+
+                <strong> Sprzedawaj swoje produkty, bez żadnych opłat! </strong><br>
+                Wypełnij prosty formularz. Podaj w nim cenę, wybierz opcje płatności i dostawy (również zbiór własny),
+                które są dla Ciebie najwygodniejsze. Pamiętaj, że dokładny opis produktu i dodanie jego zdjęcia mogą
+                zwiększyć zainteresowanie kupujących Twoją ofertą.<br>
+                <strong> Kupuj szybko i wygodnie od lokalnych rolników i producentów!</strong><br>
+                Masz już dość żywności z supermarketów – z importu lub niewiadomego pochodzenia? Znajdź zdrową
+                alternatywę w swojej okolicy! Ułatwi Ci to wyszukiwarka joodla oraz mapa, która wskaże drogę, jeśli
+                będziesz chciał osobiście odebrać od rolników zamówione produkty i przy okazji poznać ich i nawiązać
+                bliższą i długofalową relację opartą na wzajemnym zaufaniu.<br>
+                <strong>Negocjuj ceny! </strong> <br>
+                Chcesz znaleźć szybszy zbyt na swoje produkty i jesteś w stanie zaakceptować nieco niższą cenę pod
+                warunkiem zakupu większej ilości? Nic prostszego. Tworząc ofertę sprzedaży wybierz opcję negocjacji ceny
+                i określ minimalną ilość, jaką możesz sprzedać taniej.
+                Chcesz kupić większą ilość produktu po niższej cenie? Dzięki joodla jest to możliwe! Zaproponuj
+                sprzedającemu swoją cenę i ciesz się z okazyjnego <br>
+
+            </p>
+        </div>
+
+    </div>
+</section>
+<section id="company" >
+    <div class="row company-information">
+        <div class="col-md-6 col-sm-12 company-detail">
+            <h3 class="company-detail-info"> o nas </h3>
+            <p class="company-detail-info">
+                Jesteśmy firmą, która do tej pory dostarczała swoim Klientom oprogramowanie szyte na miarę ich potrzeb.
+                Zrealizowaliśmy wiele ciekawych projektów, głównie dla sektora publicznego.
+                Tym razem postanowiliśmy zrobić aplikację, z której chętnie skorzysta szersze grono odbiorców.
+                Joodla to projekt, który zrodził się w naszych głowach w odpowiedzi na problemy rolników i oczekiwania
+                konsumentów.
+
+            </p>
+        </div>
+       <!-- <div class="col-md-6 col-sm-12">
+            <img src="img/company.jpg" style="height: 500px">
+        </div>-->
+    </div>
+</section>
+<section id="donate"  >
+    <div class="row donate" >
+        <div class="col-md-6 col-sm-12">
+        <img src="img/company.jpg" style="height: 500px" class="img-works-cont">
+    </div>
+        <div class="col-md-6 col-sm-12" style="padding-right: 80px;">
+            <h3> Wesprzyj nas </h3>
+            <p>
+                Korzystanie z aplikacji jest całkowicie darmowe. Użytkownicy nie będą bombardowani reklamami. Z tych
+                powodów, a także przy braku inwestorów zewnętrznych, żeby w dalszym ciągu móc rozwijać projekt o nowe
+                funkcjonalności, potrzebujemy finansowego wsparcia, które pozwoliłoby nam w pełni zrealizować wizję
+                branżowej platformy sprzedażowej na miarę naszych czasów oraz sprostać wszystkim wymaganiom
+                Użytkowników.
+            </p>
+            <h6>  Darowizny możesz dokonać wpłacając dowolną kwotę na nasze konto:
+                Tu dane do wpłaty
+                Tytułem:
+                lub poprzez platformę PayPal klikając w poniższy przycisk</h6><br>
+
+            <img src="img/paypal.jpg" style="height: 50px;">
+    </div>
+    </div>
+
+</section>
+
+<section id="footer" >
+    <div class="row contact">
+        <div class="col-md-6 col-sm-12 contact-info">
+        <h3> KONTAKT </h3> <br>
+<p>
+    Jeżeli masz pytania, sugestie - napisz do nas! Chętnie poznamy Twoje zdanie na temat naszego projektu i odpowiemy na pytania z nim związane.
+    kontakt@joodla.pl
+
+</p>
+        </div>
+
+            <div class="col-md-6 col-sm-12 works-img" >
+                <img src="img/black-fruits-701774.jpg" style="height: 430px" class="img-works-cont">
+        </div>
+    </div>
+</section>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="js/countdown.js"></script>
+</body>
+</html>

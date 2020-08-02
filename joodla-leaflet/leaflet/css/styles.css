@@ -1,0 +1,295 @@
+.navbar {
+    background: rgba(0, 0, 0, 0.8) !important;
+    height: 10vh;
+    position: fixed;
+    top: 0;
+}
+
+#home-section {
+    background: url("../img/warren-wong-J33qmCVr02A-unsplash.jpg") no-repeat;
+    background-size: cover;
+    height: 100vh;
+
+}
+
+.aw-vertical-align {
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 100vh;
+}
+
+.aw-heading {
+    font-weight: 900;
+    font-size: 2.125rem;
+    letter-spacing: 0.10rem;
+}
+
+.aw-footer {
+    font-weight: 300;
+    font-size: 1.125rem;
+    letter-spacing: 0.10rem;
+    bottom: 0;
+    position: fixed;
+}
+
+.aw-ending {
+    color: #29B992;
+}
+
+.aw-start {
+    color: black;
+}
+
+.aw-center {
+    color: #29B992;
+}
+
+.aw-back {
+    color: white;
+    background: #29B992;
+}
+
+#btnRemindMe {
+    border: 2px solid #f8f9fa;
+}
+
+#btnAboutUs {
+    border: 2px solid #29B992;
+}
+
+.btn-light:hover {
+    background: transparent;
+    color: #f8f9fa;
+}
+
+.btn-danger {
+    background: #29B992;
+}
+
+.btn-danger:hover {
+    background: transparent;
+}
+
+.btn-danger-override {
+    letter-spacing: 0.10rem;
+}
+
+.btn-danger-override:hover {
+    color: black;
+}
+
+.modal-dialog {
+    min-height: calc(100vh - 60px);
+    overflow: auto;
+}
+
+.aw-about {
+    width: 18rem;
+}
+
+.about-project {
+    margin: 10px;
+}
+
+.about-project-contnet {
+
+}
+
+@media (min-width: 576px) {
+    .navbar {
+
+    }
+
+    .aw-heading {
+        font-weight: 900;
+        font-size: 3.75rem;
+    }
+
+    .aw-countdown {
+        width: 31.25rem;
+    }
+
+    .aw-padding {
+        padding: 0.75rem 2.5rem;
+    }
+
+    .aw-about {
+        width: 30rem;
+    }
+}
+
+.nav {
+    background-color: #f1f1f1;
+    border-bottom: .1px solid #d3d3d3;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    z-index: 100
+}
+
+.nav__list {
+    height: 54px;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    overflow: hidden
+}
+
+@media (max-width: 768px) {
+    .nav__list {
+        height: auto
+    }
+}
+
+.nav__item {
+    display: inline-block;
+    float: right;
+    text-transform: uppercase
+}
+
+.nav__mobile_button {
+    height: 54px;
+    float: right;
+    width: 100%;
+    text-transform: uppercase
+}
+
+.mobile_button__link {
+    text-align: center;
+    font-size: 2.5rem;
+    display: block;
+    margin: 0 auto
+}
+
+@media (min-width: 769px) {
+    .mobile_button__link {
+        display: none;
+        float: right
+    }
+}
+
+.mobile_button__icon {
+    color: #595959;
+    text-decoration: none;
+    width: 36px;
+    padding-bottom: 5px;
+    height: 46px
+}
+
+@media (max-width: 768px) {
+    .nav__item {
+        display: none;
+        display: block;
+        height: 54px
+    }
+}
+
+.nav__link {
+    color: #595959;
+    display: block;
+    padding: 4px 4px;
+    margin: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: all .2s ease-in-out
+}
+
+.nav__link:hover {
+    color: #534A4D;
+    transform: scale(1.1)
+}
+
+.nav__link--current {
+    border-bottom: 2px solid #d07c7c
+}
+
+@media screen and (max-width: 768px) {
+    .nav__item {
+        width: 100%
+    }
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    text-align: justify;
+    line-height: 1.8;
+    margin-right: 50px;
+}
+
+.information-content {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.img-farm {
+    display: flex;
+    justify-content: center;
+
+}
+
+.img-farmer {
+    height: 550px;
+    margin-top: 60px;
+}
+
+.information-main {
+    padding-left: 100px;
+}
+
+.works {
+    background-color: #f5f3f0;
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    padding: 120px 0px 120px 0px;
+}
+
+.works-img {
+    vertical-align: middle;
+    display: flex;
+}
+
+.img-works-cont {
+    height: auto;
+    max-width: 100%;
+    border: none;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    margin: auto;
+}
+
+.company-information {
+    background-image: url(https://ld-wp.template-help.com/rockthemes/15714/wp-content/uploads/2017/12/section-bg-1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    padding: 141px 0px 140px 0px;
+}
+
+.company-detail {
+    transition: background .3s, border .3s, border-radius .3s, box-shadow .3s, -webkit-border-radius .3s, -webkit-box-shadow .3s;
+}
+.company-detail-info {
+    margin-left: 100px;
+    color: white;
+}
+.donate{
+
+    background-color: #f5f3f0;
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    padding: 100px 0px 87px 0px;
+}
+.contact{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.contact-info{
+    padding-left: 80px;
+}
